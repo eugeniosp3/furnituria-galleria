@@ -15,10 +15,13 @@ export default function RootLayout({ children }) {
     <html lang="en" className="">
       <body className={`${inter.className} w-screen h-screen`}>
         {/* for mobile */}
-        <div className="sm:hidden fixed w-screen"><NavBarMobile /></div>
+        <div className="
+        sm:hidden
+        fixed w-screen
+        "><NavBarMobile /></div>
         {/* for desktop */}
-        <div className="xs:max-sm:hidden fixed w-screen flex items-center justify-between
-         bg-gray-700 h-16 p-4">
+        <div className="xs:max-sm:hidden lg:justify-center
+        fixed w-screen flex items-center justify-between bg-gray-700 h-16 p-4">
           <NavBarDesktop />
           </div>
         {children}</body>
