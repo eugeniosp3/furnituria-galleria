@@ -3,9 +3,9 @@ import React from 'react'
 
 function StoreItem({image, title, price}) {
   return (
-    <div className="w-2/3  h-96 flex flex-col items-center justify-evenly gap-4">
-        <Image src={image} width={200} height={200} className="w-2/3"/>
-        <div className="w-2/3 text-center flex items-center flex-col justify-center gap-4">
+    <div className="w-2/3  h-96 flex flex-col items-center justify-evenly sm:max-md:gap-4 md:gap-6">
+        <Image src={image} width={200} height={200} className="sm:max-md:w-2/3 md:w-1/3"/>
+        <div className="sm:max-md:w-2/3 md:w-1/4 text-center flex items-center flex-col justify-center gap-4">
         <p>{title}</p>
         <p className="font-semibold">${price}</p>
         </div>

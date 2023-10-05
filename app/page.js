@@ -16,16 +16,16 @@ export default function Home() {
       <Hero />
       </div>
       <div id="mid" className="w-full bg-white flex flex-col items-center justify-between gap-20">
-        <div id="CTAbuttons" className="flex flex-col gap-3 w-full items-center mt-10">
-          <div className="bg-yellow-500 w-4/5 p-3 rounded-full flex items-center justify-center">
+        <div id="CTAbuttons" className="flex sm:max-md:flex-col md:flex-row gap-3 w-full items-center md:justify-center mt-10">
+          <div className="bg-yellow-500 sm:max-md:w-4/5 md:w-1/3 p-3 rounded-full flex items-center justify-center">
             <p className="text-slate-50">Buy Now</p></div>
-          <div className="border-2 border-yellow-700 w-4/5 p-3 rounded-full flex items-center justify-center">
+          <div className="border-2 border-yellow-700 sm:max-md:w-4/5 md:w-1/3 p-3 rounded-full flex items-center justify-center">
             <p className="text-yellow-700">Explore</p></div>
         </div>
         <div id="whyWeDaBest" className="flex flex-col items-center justify-evenly h-3/5 w-4/5  gap-10">
           <div id="textOnlyBottom" className="flex flex-col items-start gap-5 w-full h-1/2 ">
-            <p className="text-2xl font-semibold text-slate-800">Why We're The Best</p>
-            <p className="text-slate-500">We have 5000+ 5-Star reviews on our Furniture & Home Decor products. If you order $500 or more receive free shipping and placement in your room of choice.</p>
+            <p className="text-2xl font-semibold text-slate-800">Why We&lsquo;re The Best</p>
+            <p className="text-slate-500">We have 5000+ 5-Star reviews on our Furniture & Home Decor products. If you order $500 or more receive free shipping and placement in your room of choice. If you live in a building with no elevator you better have strong friends though.</p>
           </div>
           <div id="arrows" className="flex w-11/12 items-center justify-between">
             <FaArrowCircleRight className="text-4xl text-yellow-500" />
@@ -33,13 +33,13 @@ export default function Home() {
             <FaArrowCircleRight className="text-4xl text-yellow-500" />
 
           </div>
-          <div id="textOnlyBottom" className="flex flex-col items-start gap-3 w-full h-1/2">
+          <div id="textOnlyBottom" className="flex flex-col items-start gap-2 w-full h-1/2">
             <p className="text-2xl font-semibold text-slate-800">Family Owned for 50 Years</p>
-            <p className="text-slate-500">We have 5000+ 5-Star reviews on our Furniture & Home Decor products. If you order $500 or more receive free shipping and placement in your room of choice.</p>
+            <p className="text-slate-500">Our founder, Pete Furnituria, founded this furniture gallery in the early 1920s. His last name was actually Furnituria and he did not have a legal name change in 1919. Claims stating otherwise are based on a lie started by our competitors and we deny it to this day. We asked him too.</p>
           </div>
         </div>
         <div id="storeItems" className="w-full h-[1200px] flex flex-col items-center justify-evenly gap-20 mb-32 mt-10">
-          <div id="highlighted items" className="flex flex-col items-center">
+          <div id="highlighted items" className="flex flex-col items-center md:-mb-10">
             <p className="text-2xl font-semibold text-slate-700">Highlighted Items</p>
             <p className="text-sm text-slate-400">Most purchased items this week.</p>
           </div>
@@ -57,7 +57,7 @@ export default function Home() {
       fixed translate-x-10 translate-y-14 -top-10 left-3/4
       
       ">
-        {!menu ? <IoMenuOutline className="text-3xl text-slate-50"
+        {!menu ? <IoMenuOutline className="text-3xl text-slate-50 md:hidden"
         onClick={() => setMenu(!menu)} />
       : <AiOutlineClose className="text-3xl text-slate-50" 
       onClick={() => setMenu(!menu)} />

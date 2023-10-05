@@ -8,15 +8,15 @@ function MobileLinks() {
     bg-slate-500 bg-opacity-90 backdrop-blur-md gap-10
     shadow-md
     ">
-        <p className="font-medium text-slate-700 hover:text-yellow-500 hover:animate-bounce ease-in-out duration-500">Home</p>
-        <p className="font-medium text-slate-700 hover:text-yellow-500 hover:animate-bounce ease-in-out duration-500">Furniture</p>
-        <p className="font-medium text-slate-700 hover:text-yellow-500 hover:animate-bounce ease-in-out duration-500">Cart</p>
-        <p className="font-medium text-slate-700 hover:text-yellow-500 hover:animate-bounce ease-in-out duration-500">Blog</p>
-        <p className="font-medium text-slate-700 hover:text-yellow-500 hover:animate-bounce ease-in-out duration-500">Admin</p>
+        <p className="font-medium text-slate-50 hover:text-yellow-500 hover:animate-bounce ease-in-out duration-500">Home</p>
+        <p className="font-medium text-slate-50 hover:text-yellow-500 hover:animate-bounce ease-in-out duration-500">Furniture</p>
+        <p className="font-medium text-slate-50 hover:text-yellow-500 hover:animate-bounce ease-in-out duration-500">Cart</p>
+        <p className="font-medium text-slate-50 hover:text-yellow-500 hover:animate-bounce ease-in-out duration-500">Blog</p>
+        <p className="font-medium text-slate-50 hover:text-yellow-500 hover:animate-bounce ease-in-out duration-500">Admin</p>
 
 
     </div>
   )
 }
 
-export default MobileLinks
+export default MobileLinks 

@@ -16,4 +16,4 @@ function NavBarMobile() {
   )
 }
 
-export default NavBarMobile
+export default NavBarMobile 

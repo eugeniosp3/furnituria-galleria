@@ -17,7 +17,10 @@ export default function RootLayout({ children }) {
         {/* for mobile */}
         <div className="sm:hidden fixed w-screen"><NavBarMobile /></div>
         {/* for desktop */}
-        <div className="xs:max-sm:hidden fixed w-screen"><NavBarDesktop /></div>
+        <div className="xs:max-sm:hidden fixed w-screen flex items-center justify-between
+         bg-gray-700 h-16 p-4">
+          <NavBarDesktop />
+          </div>
         {children}</body>
     </html>
   )
